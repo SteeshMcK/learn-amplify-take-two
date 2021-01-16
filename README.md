@@ -2,6 +2,9 @@ Simple create-react-app used to learn deployment using AWS Amplify
 (Second time's a charm! :>)
 
 So far...  
-1. ~Create a React App~  
-2. ~Initialize GitHub Repository~    
-3. Log into AWS Management Console  
+1. ~Create a React App~    
+2. ~Initialize GitHub Repository~     
+3. ~Initialize Local App~  
+4. Add Authentication  
+
+Find it here => [Deployed using AWS Amplify](https://main.dim6orbbmuumy.amplifyapp.com/)
