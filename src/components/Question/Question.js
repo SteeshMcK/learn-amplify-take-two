@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Question.css'
 
 const initQuestionState = { name: '' }
@@ -36,6 +37,7 @@ const Question  = () => {
                 </form>)
             : ( <div className='greetingsYall'>
                     <p>Welcome, {userName.name}!</p>
+                    <Link to='/notes'>Let's write some notes!</Link>
                </div>)
         }
         </div> 

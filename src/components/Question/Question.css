@@ -32,3 +32,7 @@ label {
     color: burlywood;
     font-size: 4em;
 }
+
+.greetingsYall a {
+    font-size: .75em;
+}
