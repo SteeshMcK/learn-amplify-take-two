@@ -10,3 +10,6 @@ So far...
 :>  
 
 Find it here => [Deployed using AWS Amplify](https://main.dim6orbbmuumy.amplifyapp.com/)
+
+username: visitor2021  
+password: Aws2021!
