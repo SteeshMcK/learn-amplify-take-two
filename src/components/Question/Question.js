@@ -37,7 +37,7 @@ const Question  = () => {
                 </form>)
             : ( <div className='greetingsYall'>
                     <p>Welcome, {userName.name}!</p>
-                    <Link to='/notes'>Let's write some notes!</Link>
+                    <Link to='/notes'>Let's write some notes! CLick Me!</Link>
                </div>)
         }
         </div> 

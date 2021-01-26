@@ -5,6 +5,7 @@ body {
 
 .sign-out {
   width: fit-content;
-  float: right;
-  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
 }

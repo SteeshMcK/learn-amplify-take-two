@@ -37,4 +37,8 @@ label {
 
 .greetingsYall a {
     font-size: .75em;
+    color: cornsilk;
+    text-decoration: none;
+    border: 1px solid cornsilk;
+    padding: 0 10px;
 }

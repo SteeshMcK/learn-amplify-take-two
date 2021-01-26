@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { API, Storage } from 'aws-amplify';
 import { listTodos } from '../../graphql/queries';
 import { createTodo, deleteTodo } from '../../graphql/mutations';
+import './Notes.css';
 
 const initialFormState = { name: '', description: '' }
 
@@ -57,32 +58,37 @@ const Notes = () => {
     return (
         <div className='notes'>
             <h1>My Notes App</h1>
-            <input
-                onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-                placeholder="Note name"
-                value={formData.name}
-            />
-            <input
-                onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-                placeholder="Note description"
-                value={formData.description}
-            />
-            <input
-                type='file'
-                onChange={onChange}
-            />
-            <button onClick={createNote}>Create Note</button>
+            <div className='form-div'>
+                <div className='input-div'>
+                    <input
+                        onChange={e => setFormData({ ...formData, 'name': e.target.value})}
+                        placeholder="Note name"
+                        value={formData.name}
+                    />
+                    <input
+                        onChange={e => setFormData({ ...formData, 'description': e.target.value})}
+                        placeholder="Note description"
+                        value={formData.description}
+                    />
+                    <input
+                        className='file-upload'
+                        type='file'
+                        onChange={onChange}
+                    />
+                    <button onClick={createNote}>Create Note</button>
+                </div>
+            </div>
             <div style={{marginBottom: 30}}>
                 {
                 notes.map(note => (
                     <div key={note.id || note.name}>
-                    <h2>{note.name}</h2>
-                    <p>{note.description}</p>
-                    <button onClick={() => deleteNote(note)}>Delete note</button>
-                    {/* If image present, render underneath delete button */}
-                    {
-                        note.image && <img src={note.image} style={{width: 400}} alt='' />
-                    }
+                        <h2>{note.name}</h2>
+                        <p>{note.description}</p>
+                        <button onClick={() => deleteNote(note)}>Delete note</button>
+                        {/* If image present, render underneath delete button */}
+                        {
+                            note.image && <img src={note.image} style={{width: 400}} alt='' />
+                        }
                     </div>
                 ))
                 }

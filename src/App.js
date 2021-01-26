@@ -8,6 +8,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="sign-out">
+          <AmplifySignOut />
+        </div>
         <Switch>
           <Route exact path='/'>
             <Question />
@@ -16,9 +19,9 @@ function App() {
             <Notes />
           </Route>
         </Switch>
-        <div className="sign-out">
+        {/* <div className="sign-out">
           <AmplifySignOut />
-        </div>
+        </div> */}
       </div>
     </Router>
   );
