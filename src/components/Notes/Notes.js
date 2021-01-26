@@ -81,7 +81,7 @@ const Notes = () => {
                     <button onClick={() => deleteNote(note)}>Delete note</button>
                     {/* If image present, render underneath delete button */}
                     {
-                        note.image && <img src={note.image} style={{width: 400}} />
+                        note.image && <img src={note.image} style={{width: 400}} alt='' />
                     }
                     </div>
                 ))

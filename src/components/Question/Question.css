@@ -20,12 +20,14 @@ label {
 }
 
 #submitBtn {
-    background-color: darkkhaki;
-    color: #020202;
+    background-color: #020202;
+    color: cornsilk;
     width: 150px;
     height: 30px;
+    border: 1px solid cornsilk;
     border-radius: 25px;
     line-height: 15px;
+    margin-top: 10px;
 }
 
 .greetingsYall {

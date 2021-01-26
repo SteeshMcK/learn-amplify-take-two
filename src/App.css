@@ -2,3 +2,9 @@ body {
   background-color: #020202;
   color: white;
 }
+
+.sign-out {
+  width: fit-content;
+  float: right;
+  margin: auto;
+}

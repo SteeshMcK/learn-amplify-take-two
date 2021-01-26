@@ -16,7 +16,9 @@ function App() {
             <Notes />
           </Route>
         </Switch>
-        <AmplifySignOut />
+        <div className="sign-out">
+          <AmplifySignOut />
+        </div>
       </div>
     </Router>
   );
