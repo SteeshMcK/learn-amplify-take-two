@@ -6,11 +6,14 @@
 
 .notes h1 {
     text-align: center;
+    text-decoration: underline;
 }
 
+/* FORM STYLES */
 .form-div {
     width: 75%;
     margin: auto;
+    padding-bottom: 30px;
 }
 .input-div {
     width: 75%;
@@ -33,6 +36,26 @@
 .input-div button {
     margin-left: 50px;
     padding: 5px 20px;
+    background-color: #ff9900;
+    color: #202020;
+    font-weight: bold;
+}
+
+/* NOTES STYLES */
+.renderedNote {
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px dashed cornsilk;
+}
+
+.renderedNote img {
+    margin-bottom: 20px;
+}
+
+.renderedNote button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
     background-color: #ff9900;
     color: #202020;
     font-weight: bold;

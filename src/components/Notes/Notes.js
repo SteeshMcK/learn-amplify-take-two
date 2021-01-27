@@ -78,17 +78,21 @@ const Notes = () => {
                     <button onClick={createNote}>Create Note</button>
                 </div>
             </div>
-            <div style={{marginBottom: 30}}>
+            <div>
                 {
                 notes.map(note => (
-                    <div key={note.id || note.name}>
+                    <div key={note.id || note.name} className='renderedNote'>
                         <h2>{note.name}</h2>
                         <p>{note.description}</p>
-                        <button onClick={() => deleteNote(note)}>Delete note</button>
                         {/* If image present, render underneath delete button */}
                         {
                             note.image && <img src={note.image} style={{width: 400}} alt='' />
                         }
+                        <button onClick={() => deleteNote(note)}>Delete note</button>
+                        {/* If image present, render underneath delete button
+                        {
+                            note.image && <img src={note.image} style={{width: 400}} alt='' />
+                        } */}
                     </div>
                 ))
                 }
